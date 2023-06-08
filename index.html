@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,4 +126,133 @@
             background-size: 100%;
         }
     }
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="all-page">
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkcoLV.jpg" />
+                </div>
+                <div class="card__face card__face--back">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkc5Mq.jpg" />
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkcLi4.jpg" />
+                </div>
+                <div class="card__face card__face--back">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkcboF.jpg" />
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkchzn.jpg" />
+                </div>
+                <div class="card__face card__face--back">
+                    <img src="https://s1.ax1x.com/2023/06/08/pCkcIs0.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style lang="less">
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://s1.ax1x.com/2023/05/30/p9jaKHJ.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: zoom;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        overflow: hidden;
+        opacity: .9;
+    }
+
+
+
+
+    .scene {
+        height: 100%;
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        -webkit-perspective: 800px;
+        perspective: 800px;
+        padding-top: 300px;
+        opacity: .9 !important;
+        /* 确保子元素在上层显示 */
+
+
+    }
+
+    .scene .card {
+        position: relative;
+        width: 240px;
+        height: 300px;
+        color: white;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .scene .card:hover {
+        -webkit-transform: rotateY(0.5turn);
+        transform: rotateY(0.5turn);
+    }
+
+    .scene .card .card__face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: 1s ease-in-out;
+        -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    }
+
+    .scene .card .card__face img {
+        width: 240px;
+        height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+    }
+
+    .scene .card .card__face--back {
+        -webkit-transform: rotateY(0.5turn);
+        transform: rotateY(0.5turn);
+    }
+
+    @keyframes zoom {
+        from {
+            background-size: 95%;
+        }
+
+        to {
+            background-size: 100%;
+        }
+    }
+>>>>>>> 8097bc038551c8665a06ed94d2e4b03bc80e97e2
 </style>
